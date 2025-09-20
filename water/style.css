@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background-color: #333;
+  min-height: 400vh;
+  font-family: Arial, sans-serif;
+}
+
+#glass-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+svg {
+  width: 120px;
+  height: 200px;
+  position: absolute;
+  pointer-events: none;
+}
+
+#welcome {
+  opacity: 0;
+  font-size: 1.8rem;
+  color: #fff;
+  transition: opacity 0.5s ease;
+  text-align: center;
+  margin-top: 230px; 
+  position: relative;
+  z-index: 2;
+}
+
+#percentage {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  margin-top: 90px; 
+  transition: 0.3s ease;
+}
